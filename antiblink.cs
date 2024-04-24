@@ -3,14 +3,14 @@ using HarmonyLib;
 using UnityEngine;
 using BoplFixedMath;
 
-namespace PermaBlink 
+namespace AntiBlink
 {
-    [BepInPlugin("com.Luman.PermaBlink", "PermaBlink", "1.0.0")]
-    public class PermaBlink : BaseUnityPlugin
+    [BepInPlugin("com.Luman.AntiBlink", "AntiBlink", "1.0.0")]
+    public class AntiBlink : BaseUnityPlugin
     {
         void Awake()
         {
-            Harmony harmony = new Harmony("com.Luman.PermaBlink");
+            Harmony harmony = new Harmony("com.Luman.AntiBlink");
             harmony.PatchAll();
         }
     }
